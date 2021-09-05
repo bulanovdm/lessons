@@ -1,0 +1,38 @@
+database:
+  url: jdbc:postgresql:/localhost:5432/instance
+  username: foo
+  password: bar
+
+app:
+  prop: "prop"
+
+server:
+  port: 8081 #
+  #servlet:
+    # contextPath: /springbootapp  # prefix url
+  error:
+    whitelabel:
+      enabled: false
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+
+logging:
+  level:
+    org:
+      springframework:
+        jdbc:
+          core:
+            StatementCreatorUtils: TRACE # SQL queries
+            JdbcTemplate: DEBUG # prepared statement parameters
+
+      hibernate:
+        SQL: DEBUG # SQL queries
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE # prepared statement parameters
