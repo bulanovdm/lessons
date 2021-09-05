@@ -1,0 +1,25 @@
+gradle init --type java-application  Создает java проект
+
+gradle <имя модуля>:<имя задачи>
+
+gradle tasks  Список возможных задач
+
+gradle wrapper  Генерирует файлы wrapper
+
+gradlew --stop  Останавливает все потоки демоны
+
+
+--rerun-tasks  Выполнить все задачи, даже если они выполнены
+
+-i --info Уровень логов на info
+
+-d --debug Показывать все сообщения журнала
+
+-q --quiet Только логи ошибок
+
+gradle --console plain dependencies  Вызывает список всех конфигураций и привязанных к ним зависимостей в виде перечня
+
+--refresh-dependencies  Принудительное обновление зависимостей
+
+--exclude-task <имя таски>  Исключить выполнение таски
+

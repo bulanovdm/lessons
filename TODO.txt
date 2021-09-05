@@ -1,0 +1,13 @@
+алгоритмы
+SQL
+Структуры данных
+soap
+jaxb
+gradle
+mock
+spring tests
+docker
+jenkins
+sonar
+openshift
+nexus
